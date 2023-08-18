@@ -1,0 +1,18 @@
+<mvc:View controllerName="testuploadxml.controller.View1"
+    xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	class="viewPadding">
+	<l:VerticalLayout>
+		<u:FileUploader
+			id="idFileUploader"
+			name="myFileUpload"
+			uploadUrl="upload/"
+			tooltip="Upload your file to the local server"
+			uploadComplete="handleUploadComplete"/>
+		<Button
+			text="Upload File"
+			press="handleUploadPress"/>
+	</l:VerticalLayout>
+</mvc:View>

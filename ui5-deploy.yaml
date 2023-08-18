@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "2.6"
+metadata:
+  name: testuploadxml
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: System_Z6F_SAML_ASSERTION
+          url: https://my406646-api.s4hana.cloud.sap
+        app:
+          name: ZTESTUPLOAD
+          package: ZDLW
+          transport: Z6FK900017
+        exclude:
+          - /test/
