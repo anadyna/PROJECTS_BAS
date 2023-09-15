@@ -5,12 +5,12 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "testuploadxml/model/models"
+        "ztransp_order_cte/model/models"
     ],
     function (UIComponent, Device, models) {
         "use strict";
 
-        return UIComponent.extend("testuploadxml.Component", {
+        return UIComponent.extend("ztransp_order_cte.Component", {
             metadata: {
                 manifest: "json"
             },

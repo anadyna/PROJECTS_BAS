@@ -1,6 +1,6 @@
 specVersion: "2.6"
 metadata:
-  name: testuploadxml
+  name: ztransp_order_cte
 type: application
 server:
   customMiddleware:
@@ -22,5 +22,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: testuploadxml
+        component: ztransp_order_cte
         ui5Theme: sap_horizon

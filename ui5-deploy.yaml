@@ -2,7 +2,7 @@
 
 specVersion: "2.6"
 metadata:
-  name: testuploadxml
+  name: ztransp_order_cte
 type: application
 builder:
   resources:
@@ -17,8 +17,9 @@ builder:
           destination: System_Z6F_SAML_ASSERTION
           url: https://my406646-api.s4hana.cloud.sap
         app:
-          name: ZTESTUPLOAD
+          name: ztransp_order_cte
+          description: App ztransp_order_cte
           package: ZDLW
-          transport: Z6FK900017
+          transport: Z6FK900076
         exclude:
           - /test/
