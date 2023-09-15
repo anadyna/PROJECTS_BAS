@@ -1,7 +1,7 @@
 {
   "_version": "1.48.0",
   "sap.app": {
-    "id": "testuploadxml",
+    "id": "ztransp_order_cte",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -55,9 +55,18 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "testuploadxml.i18n.i18n"
+          "bundleName": "ztransp_order_cte.i18n.i18n"
         }
-      }
+      },
+      "": {
+				"dataSource": "mainService",
+				"settings": {
+					"defaultBindingMode": "TwoWay",
+					"metadataUrlParams": {
+						"sap-documentation": "heading"
+					}
+				}
+			}
     },
     "resources": {
       "css": [
@@ -71,35 +80,51 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "testuploadxml.view",
+        "viewPath": "ztransp_order_cte.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
       },
       "routes": [
         {
-          "name": "RouteView1",
+          "name": "RouteUpload",
           "pattern": ":?query:",
           "target": [
-            "TargetView1"
+            "TargetUpload"
+          ]
+        },
+        {
+          "name": "RouteOrdersList",
+          "pattern": ":?query:",
+          "target": [
+            "TargetOrdersList"
           ]
         }
       ],
       "targets": {
-        "TargetView1": {
+        "TargetUpload": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "View1",
-          "viewName": "View1"
+          "viewId": "Upload",
+          "viewName": "Upload"
+        },
+        "TargetOrdersList": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "OrdersList",
+          "viewName": "OrdersList"
         }
+
       }
     },
     "rootView": {
-      "viewName": "testuploadxml.view.App",
+      "viewName": "ztransp_order_cte.view.App",
       "type": "XML",
       "async": true,
       "id": "App"
     }
+
   }
 }

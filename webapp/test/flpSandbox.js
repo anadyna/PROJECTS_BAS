@@ -40,7 +40,7 @@ sap.ui.define([
 								"tileType": "sap.ushell.ui.tile.StaticTile",
 								"properties": {
 									"title": "App Title",
-									"targetURL": "#testuploadxml-display"
+									"targetURL": "#ztransp_order_cte-display"
 								}
 							}]
 						}]
@@ -51,8 +51,8 @@ sap.ui.define([
 				"adapter": {
 					"config": {
 						"inbounds": {
-							"testuploadxml-display": {
-								"semanticObject": "testuploadxml",
+							"ztransp_order_cte-display": {
+								"semanticObject": "ztransp_order_cte",
 								"action": "display",
 								"description": "A Fiori application.",
 								"title": "App Title",
@@ -61,8 +61,8 @@ sap.ui.define([
 								},
 								"resolutionResult": {
 									"applicationType": "SAPUI5",
-									"additionalInformation": "SAPUI5.Component=testuploadxml",
-									"url": sap.ui.require.toUrl("testuploadxml")
+									"additionalInformation": "SAPUI5.Component=ztransp_order_cte",
+									"url": sap.ui.require.toUrl("ztransp_order_cte")
 								}
 							}
 						}

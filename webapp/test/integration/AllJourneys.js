@@ -7,7 +7,7 @@ sap.ui.define([
 
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "testuploadxml.view.",
+		viewNamespace: "ztransp_order_cte.view.",
 		autoWait: true
 	});
 });
